@@ -5,6 +5,7 @@ from FileDecrypter import FileDecrypter
 
 fileRead = FileRead("AllWords.txt")
 fileRead.readFirstLineFromFile()
+fileRead.readFileLineByLine("AllWords.txt")
 
 
 
