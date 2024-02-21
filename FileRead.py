@@ -26,6 +26,17 @@ class FileRead:
         except IOError:
             print('Unable to read from file: ', self.filename)
 
+    def totalNumberOfLines(self, fileName):
+
+       try:
+          with open(fileName, 'r') as reader:
+            lines = reader.readlines()
+            print(lines)
+        except IOError:
+        print('Unable to read from file: ', self.filename)
+
+
+
     def readFileLineByLine(self, fileName):
         ''' Prints out contents of the file line by line '''
         with open(fileName, 'r') as reader:
