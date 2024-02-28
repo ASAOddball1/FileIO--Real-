@@ -26,14 +26,14 @@ class FileRead:
         except IOError:
             print('Unable to read from file: ', self.filename)
 
-    def totalNumberOfLines(self, fileName):
-
-       try:
-          with open(fileName, 'r') as reader:
+    def totalNumberOfLines(self):
+        try:
+          with open(self.filename, 'r') as reader:
             lines = reader.readlines()
-            print(lines)
+            row_count = sum(1 for filename in lines)
+            print ("the total number of lines is",row_count)
         except IOError:
-        print('Unable to read from file: ', self.filename)
+            print('Unable to read from file: ', self.filename)
 
 
 
