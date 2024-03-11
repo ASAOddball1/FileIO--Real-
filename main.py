@@ -12,13 +12,17 @@ print("Read Total Number Of Characters In File")
 
 FileRead.readAllCharactersFromFile()
 
-print ("Read First Line")
+print("Read Total Number Of Words In File")
 
-FileRead.readFirstLineFromFile()
+FileRead.totalNumberOfWords()
 
-print ("Read Line By Line")
+#print ("Read First Line")
 
-FileRead.readFileLineByLine()
+#FileRead.readFirstLineFromFile()
+
+#print ("Read Line By Line")
+
+#FileRead.readFileLineByLine()
 
 
 

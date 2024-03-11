@@ -36,7 +36,13 @@ class FileRead:
         except IOError:
             print('Unable to read from file: ', self.filename)
 
-
+    def totalNumberOfWords(self):
+        '''Print Out The Total Number of Words In a File'''
+        with open(self.filename, 'r') as reader:
+            words = reader.read()
+            word = words.split()
+            word_count = len(word)
+            print(f"Total words in the file: {word_count}")
 
     def readFileLineByLine(self):
         ''' Prints out contents of the file line by line '''
@@ -99,7 +105,7 @@ class FileRead:
     # Create a method that returns the total number of lines of data in a file (DONE)
 
 
-    # Create a method that returns the total number of words in a file
+    # Create a method that returns the total number of words in a file (DONE)
 
 
     # Create a method that returns the total number of characters in a file (DONE)
