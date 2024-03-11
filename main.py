@@ -8,14 +8,17 @@ print("Read Total Number Of Lines")
 
 FileRead.totalNumberOfLines()
 
+print("Read Total Number Of Characters In File")
 
-#print ("Read First Line")
+FileRead.readAllCharactersFromFile()
 
-#fileRead.readFirstLineFromFile()
+print ("Read First Line")
 
-#print ("Read Line By Line")
+FileRead.readFirstLineFromFile()
 
-#fileRead.readFileLineByLine("AllWords.txt")
+print ("Read Line By Line")
+
+FileRead.readFileLineByLine()
 
 
 

@@ -27,6 +27,7 @@ class FileRead:
             print('Unable to read from file: ', self.filename)
 
     def totalNumberOfLines(self):
+        '''Print Out The Total Number of Lines In a File'''
         try:
           with open(self.filename, 'r') as reader:
             lines = reader.readlines()
@@ -37,14 +38,26 @@ class FileRead:
 
 
 
-    def readFileLineByLine(self, fileName):
+    def readFileLineByLine(self):
         ''' Prints out contents of the file line by line '''
-        with open(fileName, 'r') as reader:
+        with open(self.filename, 'r') as reader:
             line = reader.readline()
             while line:  #loop as long as line is defined (stops after last line is read and returns null)
                 print(line)
                 line = reader.readline()  # update line with next line data
 
+
+
+    def readAllCharactersFromFile(self):
+        '''Print The Number Of Characters In a File'''
+        try:
+            with open(self.filename, 'r') as reader:
+                content = reader.read()
+                char_count = len(content)
+                print("the total number of characters is", char_count)
+
+        except IOError:
+            print('Unable to read from file: ', self.filename)
 
     def getFileAllLines(self):
         ''' Returns a list of file contents, 1 line per entry '''
@@ -83,13 +96,13 @@ class FileRead:
 
 
     # TODO
-    # Create a method that returns the total number of lines of data in a file
+    # Create a method that returns the total number of lines of data in a file (DONE)
 
 
     # Create a method that returns the total number of words in a file
 
 
-    # Create a method that returns the total number of characters in a file
+    # Create a method that returns the total number of characters in a file (DONE)
 
 
     # Create a method that returns whether or not a file contains a given word or phrase
