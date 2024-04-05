@@ -77,6 +77,22 @@ class FileRead:
 
         return data     # return list containing all data after file reading complete
 
+    def wordcheck(self):
+        '''returns weather or not the given word is in the file'''
+        data = self.getAllDataFromFile()
+        userInput = input("What word would you like to check? ")
+
+        if(userInput in data):
+            print("The word is in the file")
+        else:
+            print("The word is not in the file")
+
+    def lengthCheck(self):
+        data = self.getFileAllLines()
+        userInput = input ("Enter the length of your word: ")
+
+        if userInput 
+
 
     def getAllDataFromFile(self):
         ''' Returns a String containing all data from file '''
@@ -111,7 +127,7 @@ class FileRead:
     # Create a method that returns the total number of characters in a file (DONE)
 
 
-    # Create a method that returns whether or not a file contains a given word or phrase
+    # Create a method that returns whether or not a file contains a given word or phrase (DONE)
 
 
     # Create a method that returns a list that only includes words of a certain length (ex: all the words with 3 letters in them)

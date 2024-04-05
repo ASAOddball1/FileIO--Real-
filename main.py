@@ -16,6 +16,10 @@ print("Read Total Number Of Words In File")
 
 FileRead.totalNumberOfWords()
 
+print("Type In A Word, This Will Check If Its In The File")
+
+FileRead.wordcheck()
+
 #print ("Read First Line")
 
 #FileRead.readFirstLineFromFile()
