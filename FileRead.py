@@ -42,7 +42,7 @@ class FileRead:
             words = reader.read()
             word = words.split()
             word_count = len(word)
-            print(f"Total words in the file: {word_count}")
+            return word_count
 
     def readFileLineByLine(self):
         ''' Prints out contents of the file line by line '''
@@ -87,11 +87,16 @@ class FileRead:
         else:
             print("The word is not in the file")
 
-    def lengthCheck(self):
+    def lengthCheck (self):
         data = self.getFileAllLines()
         userInput = input ("Enter the length of your word: ")
 
-        if userInput 
+        for i in self.getAllDataFromFile():
+            if len(str(i)) <= int(userInput):
+                print(i)
+
+
+
 
 
     def getAllDataFromFile(self):

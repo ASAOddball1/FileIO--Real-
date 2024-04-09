@@ -20,6 +20,8 @@ print("Type In A Word, This Will Check If Its In The File")
 
 FileRead.wordcheck()
 
+FileRead.lengthCheck()
+
 #print ("Read First Line")
 
 #FileRead.readFirstLineFromFile()
