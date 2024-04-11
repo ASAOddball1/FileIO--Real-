@@ -87,17 +87,14 @@ class FileRead:
         else:
             print("The word is not in the file")
 
-    def lengthCheck (self):
-        data = self.getFileAllLines()
-        userInput = input ("Enter the length of your word: ")
-
-        for i in self.getAllDataFromFile():
-            if len(str(i)) <= int(userInput):
-                print(i)
-
-
-
-
+    #This Length Check Was The Last Thing I Needed To Finish To Finish The File Read Aspect,
+    #only returns the given file name cuz god knows why
+    #file write encrypt, decrypt, and write have been left completely untouched, after this project i will continue in java,
+    #because python is maddening and all erors are confusing and hard to solve, not to mention mind boggling
+    def lengthCheck(self):
+        words = self.filename.split()
+        length = int(input("How long would you like to check for? "))
+        return [word for word in words if len(word) >= length]
 
     def getAllDataFromFile(self):
         ''' Returns a String containing all data from file '''

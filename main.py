@@ -20,7 +20,9 @@ print("Type In A Word, This Will Check If Its In The File")
 
 FileRead.wordcheck()
 
-FileRead.lengthCheck()
+instance = FileRead
+filtered_words = instance.lengthCheck()
+print(filtered_words)
 
 #print ("Read First Line")
 
